@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import {View} from 'react-native';
 import { ArrowContainerProps } from '.';
 import { useArrowContainer } from './useArrowContainer';
 
@@ -29,9 +30,9 @@ export const ArrowContainer: React.FC<ArrowContainerProps> = ({
   );
 
   return (
-    <div className={className} style={mergedStyle}>
-      <div style={arrowStyle} />
+    <View className={className} style={mergedStyle}>
+      <View style={arrowStyle} />
       {children}
-    </div>
+    </View>
   );
 };
